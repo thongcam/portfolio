@@ -1,0 +1,633 @@
+body {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 0.9vh;
+  overflow-x: hidden;
+  line-height: 0;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: inherit;
+}
+
+svg {
+  vertical-align: inherit;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#first-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#first-background {
+  height: 100vh;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+#tele {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40vh;
+}
+
+#code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30vh;
+}
+
+#first-top-curve {
+  height: 38vh;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#first-bottom-curve {
+  height: 29vh;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.title-blue {
+  color: #4879FF;
+  fill: #4879FF;
+}
+
+.code-red {
+  color: #CC575D;
+  fill: #CC575D;
+}
+
+.code-green {
+  color: #32C746;
+  fill: #32C746;
+}
+
+.code-blue {
+  color: #4F92E9;
+  fill: #4F92E9;
+}
+
+.code-yellow {
+  color: #FDBB3E;
+  fill: #FDBB3E;
+}
+#first-title {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: absolute;
+  top: 15.5vh;
+}
+
+#pretitle {
+  margin: 0;
+  font-size: 7em;
+}
+
+#big-name {
+  align-self: center;
+  height: 40vh;
+  width: auto;
+  position: relative;
+  bottom: 4vh;
+}
+
+#first-subtitle {
+  align-self: center;
+  font-size: 5em;
+  margin:0;
+}
+
+#social-media {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 23vw;
+  position: absolute;
+  bottom: 19vh;
+}
+
+#social-media svg {
+  height: 7vh;
+}
+
+#social-media svg:hover path {
+  cursor: pointer;
+  fill: #4879FF;
+}
+
+#code-page-background {
+  position: relative;
+  background-color: #282C34;
+  height: 100vh;
+}
+
+#editor-header-background {
+  height: 4vh;
+  width: 100vw;
+  background-color: #21252B;
+}
+
+#code-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#code-editor {
+  height: 100vh;
+  margin-left: 15px;
+  position: absolute;
+  top: 0;
+}
+
+#code-body {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#code-title {
+  align-self: center;
+  margin-top: 2.5vh;
+  margin-bottom: 0;
+  font-size: 4.5rem;
+  color: white;
+  font-family: Consolas,monaco,monospace;
+}
+
+#code-subtitle {
+  align-self: center;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  line-height: auto;
+  font-size: 1.3rem;
+  font-family: Consolas,monaco,monospace;
+  color: white;
+}
+
+#code-content {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  margin-left: 4.9vw;
+  margin-right: 2vw;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-column-gap: 5.3vw;
+}
+
+#project-list {
+  grid-area: 1/1/1/1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 4vw;
+  border-right: 1px solid #707070;
+}
+
+#projects {
+  margin-top: 3.5vh;
+}
+
+#project-list-title {
+  font-size: 2rem;
+  color: white;
+}
+
+.project {
+  margin-bottom: 5vh;
+}
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: 4.7vh auto;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1.2vh;
+  grid-template-areas:
+    "repo  reponame reponame"
+    "repo type demo";
+  padding-bottom: 1vh;
+}
+
+.project-inactive {
+  opacity: 0.5;
+}
+
+.project-active {
+  opacity: 1;
+}
+
+.project-inactive:hover {
+  cursor: pointer;
+  opacity: 0.25;
+}
+
+.type {
+  grid-area: type;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.type-name {
+  margin-left: 0.5vw;
+  opacity: 0.3;
+  color: white;
+}
+
+.githubrepo {
+  grid-area: repo;
+}
+
+.reponame {
+  grid-area: reponame;
+  font-size: 1.3rem;
+  color: white;
+  overflow-x:
+}
+
+.see-demo {
+  grid-area: demo;
+  justify-self: end;
+  text-decoration: underline;
+}
+
+.project-active .see-demo:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.project-inactive .see-demo:hover {
+  color: #4F92E9;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.project-sub {
+  font-size: 1rem;
+  align-self: center;
+}
+
+.project-bottom-line {
+  width: 100%;
+}
+
+.githubrepo {
+  height: 2.5rem;
+}
+
+.type-circle {
+  height: 1rem;
+}
+
+#githubbutton {
+  align-self: center;
+  margin-top: 3vh;
+  width: 16vw;
+  height: 8vh;
+  overflow: visible;
+  background-color: #21252B;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.githublogo {
+  height: 5vh;
+  overflow: visible;
+  margin-right: 1vw;
+}
+
+#View_more_at_Github {
+  white-space: nowrap;
+  text-align: left;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  color: rgba(255,255,255,1);
+}
+
+#project-name {
+  font-size: 3.3rem;
+  color: white;
+}
+
+#project-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+#project-video {
+  margin: 2vh;
+  align-self: center;
+}
+
+#project-desc {
+  font-size: 1.3rem;
+  color: white;
+}
+
+#written-in {
+  font-size: 1.3rem;
+  color: white;
+}
+
+#demo-button {
+  font-size: 1.3rem;
+  color: white;
+  background-color: #4F92E9;
+  border-radius: 15px;
+  height: 6vh;
+  width: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  align-self: flex-end;
+  right: 7vw;
+  bottom: 0;
+}
+
+#demo-button:hover {
+  color: white
+}
+.button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.button:active {
+  transition: 0.2s;
+  transform: scale(0.95,0.95);
+}
+
+#language-selector {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+}
+
+.language-flag {
+  width: 40px;
+  height: auto;
+  padding-bottom: 2px;
+}
+
+.dropdown-flag {
+  margin-right: 10px;
+}
+
+#paper-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#music-background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#music-page {
+  width: 100vw;
+  height: 100vh;
+  font-family: Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+}
+
+#music-title-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 48vw;
+  top: 1.8vh;
+}
+
+#music-title {
+  font-size: 5.5rem;
+}
+
+#music-subtitle {
+  font-size: 2rem;
+  margin-top: 0.8rem;
+}
+
+#covers {
+  display: flex;
+  flex-direction: column;
+  margin-top:12.5vh;
+}
+
+#the-covers {
+  align-self: center;
+  width: 92vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "fixyou autumn";
+}
+
+#covers-title {
+  align-self:center;
+  font-size:2.4rem;
+  position:relative;
+  bottom:6.7vh;
+}
+
+#fixyou {
+  grid-area: fixyou;
+  border-right: 1px solid #707070;
+}
+
+.title-artist {
+  font-size: 2.4rem;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 2vh;
+  padding: 0 3vw;
+}
+
+.cover-detail {
+  font-size: 2rem;
+}
+
+.cover-video {
+  padding: 2.5vh 0;
+  align-self: center;
+}
+
+#autumn {
+  gird-area: autumn;
+}
+
+#other-page {
+  position: relative;
+  height: 117vh;
+  width: 100vw;
+}
+
+#other-background {
+  position: relative;
+  height: 117vh;
+  width: 100vw;
+}
+
+#other-bottom-curve {
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+}
+
+#other-top-curve {
+  height: 20vh;
+  position: absolute;
+  right: 0;
+}
+
+#other-content {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#other-title {
+  font-size: 4.5rem;
+  margin-top: 1vh;
+  margin-left: 5vw;
+  margin-bottom: 4vh;
+}
+
+#activities {
+  align-self: center;
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2.5vw;
+  grid-template-areas: "uxvn ted esp";
+}
+
+
+#uxvn {
+  display: flex;
+  grid-area: uxvn;
+}
+
+#ted {
+  display: flex;
+  grid-area: ted;
+}
+
+#esp {
+  display: flex;
+  grid-area: esp;
+}
+
+.activity {
+  position: relative;
+}
+
+.activity-title {
+  font-size: 2rem;
+  margin-bottom: 3vh;
+}
+
+.activity-text {
+  margin-left: 3.7vw;
+}
+
+.activity-img {
+  z-index: 2;
+  position: absolute;
+  top: 3.5vh;
+  height: 6vh;
+  width: 6vh;
+}
+
+.activity-desc {
+  z-index: 1;
+  font-size: 1rem;
+  line-height: 3vh;
+  padding: 1.2vh 0.8vw 1.2vh 2vw;
+  position: relative;
+  right: 2.5vw;
+  border: 2px solid #4879FF;
+  font-weight: lighter;
+}
+
+#other-carousel {
+  align-self: center;
+  height: 47vh;
+  width: 47vw;
+}
+
+#other-carousel img {
+  height: 47vh;
+  width: auto;
+}
+
+.carousel-item h5 {
+  font-size: 2rem;
+}
+
+.carousel-item p {
+  font-size: 1.2rem;
+}
+
+#footer {
+  position: relative;
+  height: 8vh;
+  padding: 0 3vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #282C34;
+}
+
+
+#footer-gh:hover {
+  cursor: pointer;
+  color: #4F92E9;
+  fill: #4F92E9;
+}
+
+#desc-link {
+  color: #4F92E9;
+  text-decoration: underline;
+}

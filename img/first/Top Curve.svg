@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="735.488" height="557.024" viewBox="0 0 735.488 557.024">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9643ff"/>
+      <stop offset="1" stop-color="#0040ed"/>
+    </linearGradient>
+  </defs>
+  <path id="Top_Curve" data-name="Top Curve" d="M-2.028,552.292s.231-70.78,46.681-161.714A505.138,505.138,0,0,1,85.469,324.1c33.659-46.468,80.354-94.852,145.047-139.552C462.384,24.336,733.46-4.732,733.46-4.732H-2.028Z" transform="translate(2.028 4.732)" fill="url(#linear-gradient)"/>
+</svg>

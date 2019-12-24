@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1205.174" height="317.615" viewBox="0 0 1205.174 317.615">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9643ff"/>
+      <stop offset="1" stop-color="#0040ed"/>
+    </linearGradient>
+  </defs>
+  <path id="Bottom_Curve" data-name="Bottom Curve" d="M717.236,1080.043s174.185-33.666,357.786-95.057,291.97-118.346,376.617-150.507c291.878-110.9,470.771-60.731,470.771-60.731v306.3Z" transform="translate(-717.236 -762.428)" fill="url(#linear-gradient)"/>
+</svg>

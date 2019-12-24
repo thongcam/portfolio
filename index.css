@@ -620,6 +620,9 @@ section {
   background-color: #282C34;
 }
 
+#footer-gh {
+  color: white;
+}
 
 #footer-gh:hover {
   cursor: pointer;

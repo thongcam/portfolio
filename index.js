@@ -1,12 +1,12 @@
 var teleoffset = $("#fulltele").offset().top;
 
 const content = {
-  "#pretitle" : {
+  "#pretitle > span:first-child" : {
     "en": "Hi, I'm ",
     "es": "Hola, soy ",
     "vn": "Chào, tôi là ",
   },
-  "#code-title": {
+  "#code-title > span:first-child": {
     "en": "I love ",
     "es": "Me amo ",
     "vn": "Tôi đam mê ",
@@ -16,7 +16,7 @@ const content = {
     "es": "...",
     "vn": "lập trình..."
   },
-  "#code-subtitle": {
+  "#code-subtitle  > span:first-child": {
     "en": "I have been coding since 15, with a focus on ",
     "es": "",
     "vn": ""
@@ -26,7 +26,7 @@ const content = {
     "es": "",
     "vn": "",
   },
-  "#project-list-title": {
+  "#project-list-title > span:first-child": {
     "en": "Some of my ",
     "es": "",
     "vn": "",
@@ -51,6 +51,74 @@ const content = {
     "es": "",
     "vn": "",
   },
+  "coding-page" : {
+    "#project-desc": {
+      "note-finding-practice": {
+        "en": "A game that helps you practice finding notes on the guitar. You have to find the note that match the description (ex: Fret 8 A string) and click the corresponding button (ex: C#). There's a time limit.",
+        "es": "",
+        "vn": "",
+      },
+      "smart-brain": {
+        "en": "Insert an image URL (link) and the website will use the power of Artificial Intelligence to recognize faces in the image. To use the site, register with any combination of name, email and password (do not need to be real). Built upon <a id='desc-link'>Clatifai's API</a>.",
+        "es": "",
+        "vn": "",
+      },
+      "star-war-search-engine": {
+        "en": "On this website you can search for Star Wars related stuff such as movies, characters, starships and so on. You can search by name, and narrow down your search using the categories. Built upon the <a id='desc-link'>SWAPI</a> of Paul Hallett.",
+        "es": "",
+        "vn": "",
+      },
+      "habit-tracker": {
+        "en": "An Excel Workbook turned Habit Tracker App with VBA. You can add the habits you want to track and rate the level of completion of each task everyday on the scale of 5. You can see how well you are completing your tasks with the interactive graphs at the bottom.",
+        "es": "",
+        "vn": "",
+      },
+    },
+    "#written-in": {
+      "note-finding-practice": {
+        "en": "Written in Python. <br><span class='code-green'>To run the program click 'Run' on the top of the demo page.</span>",
+        "es": "",
+        "vn": "",
+      },
+      "smart-brain": {
+        "en": "Built with ReactJS.<br> <span class='code-green'>To use the website, register with any combination of name, email and password (doesn't need to be true).</span>",
+        "es": "",
+        "vn": "",
+      },
+      "star-war-search-engine": {
+        "en": "Built with ReactJS.",
+        "es": "",
+        "vn": "",
+      },
+      "habit-tracker": {
+        "en": "Built with JQuery and Bootstrap4. <br> <span class='code-green'>The file can only be used with Microsoft Excel. Make sure you click 'Enable macro' when promted upon opening the file.</span>",
+        "es": "",
+        "vn": "",
+      }
+    },
+    "#project-name": {
+      "note-finding-practice": {
+        "en": "Note Finding Practice",
+        "es": "",
+        "vn": "",
+      },
+      "smart-brain": {
+        "en": "Face Recognition App",
+        "es": "",
+        "vn": "",
+      },
+      "star-war-search-engine": {
+        "en": "Star Wars Search Engine",
+        "es": "",
+        "vn": "",
+      },
+      "habit-tracker": {
+        "en": "Portfolio Site",
+        "es": "",
+        "vn": "",
+      }
+    }
+  },
   "#project-desc": {
     "note-finding-practice": {
       "en": "A game that helps you practice finding notes on the guitar. You have to find the note that match the description (ex: Fret 8 A string) and click the corresponding button (ex: C#). There's a time limit.",
@@ -67,7 +135,7 @@ const content = {
       "es": "",
       "vn": "",
     },
-    "this-website": {
+    "habit-tracker": {
       "en": "A little website I made to help people know me better.",
       "es": "",
       "vn": "",
@@ -89,8 +157,8 @@ const content = {
       "es": "",
       "vn": "",
     },
-    "this-website": {
-      "en": "Built with JQuery and Bootstrap4.",
+    "habit-tracker": {
+      "en": "Built with Excel VBA.",
       "es": "",
       "vn": "",
     }
@@ -111,8 +179,8 @@ const content = {
       "es": "",
       "vn": "",
     },
-    "this-website": {
-      "en": "Portfolio Site",
+    "habit-tracker": {
+      "en": "Excel Habit Tracker",
       "es": "",
       "vn": "",
     }
@@ -245,25 +313,67 @@ const links =
     "web": "https://thongcam.github.io/star-war-search-engine/",
     "youtube": "https://www.youtube.com/embed/3I1NWXlmc0s?autoplay=1&loop=1",
   },
-  "this-website": {
-    "web": "#",
-    "youtube": "https://www.youtube.com/embed/u9b1tIlgT64?autoplay=1&loop=1",
+  "habit-tracker": {
+    "web": "https://drive.google.com/file/d/10XztrVoQt-C5MluSR9IjKs5jHONPdpyQ/view?usp=sharing",
+    "youtube": "https://www.youtube.com/embed/HyY_zqTUGkE?autoplay=1&loop=1",
   },
 }
+
+const lang = [
+  {
+    "id": "en",
+    "name": "English",
+    "img": "./img/first/usflag.png"
+  },
+  {
+    "id": "es",
+    "name": "Spanish",
+    "img": "./img/first/spain.png"
+  },
+  {
+    "id": "vn",
+    "name": "Vietnamese",
+    "img": "./img/first/vietnam.png"
+  }
+];
+
+const vh = $("#first-page").offsetHeight;
+
+const language = (lang) => {
+  for (var key in content) {
+    const elem = content[key];
+    if (content.hasOwnProperty(key)) {
+      if (key !== "coding-page") {
+        $(key).text(elem[lang]);
+      } else {
+        console.log(elem);
+        for (var k in elem) {
+          if (elem.hasOwnProperty(k)) {
+              $(k).html(elem[k][$('.project-active')[0].id][lang]);
+          }
+        }
+      }
+    }
+  }
+}
+
 
 $(document).ready(() => {
   $(".project").each((i) => {
     var project = $(".project")[i];
-    console.log(project);
     project.addEventListener("click",(event) => {
-      console.log($(event.currentTarget).attr("class"));
       if ($(event.currentTarget).hasClass("project-inactive")) {
         var id = $(event.currentTarget).attr("id");
-        $("#project-desc").html(content["#project-desc"][id][$("#dropdownMenuLink > img").attr("id")]);
-        $("#project-name").html(content["#project-name"][id][$("#dropdownMenuLink > img").attr("id")]);
-        $("#written-in").html(content["#written-in"][id][$("#dropdownMenuLink > img").attr("id")]);
+        $("#project-desc").html(content["coding-page"]["#project-desc"][id][$("#dropdownMenuLink > img").attr("id")]);
+        $("#project-name").html(content["coding-page"]["#project-name"][id][$("#dropdownMenuLink > img").attr("id")]);
+        $("#written-in").html(content["coding-page"]["#written-in"][id][$("#dropdownMenuLink > img").attr("id")]);
         $("#demo-button").attr("href",links[id]["web"]);
         $("#project-video").attr("src",links[id]["youtube"]);
+        if (id === "note-finding-practice") {
+          $("#demo-button > div").html("Go to demo");
+        } else if (id === "habit-tracker") {
+          $("#demo-button > div").html("Download the file");
+        }
         $(".project").each(i => {
           var elem = $(".project")[i];
           if (elem.id !==id) {
@@ -275,8 +385,25 @@ $(document).ready(() => {
       }
     })
   })
+  $(".dropdown-item").each((i) => {
+    const item = $(".dropdown-item")[i];
+    item.addEventListener("click", (event) => {
+      const lang_id = event.currentTarget.getElementsByTagName("img")[0].id;
+      language(lang_id);
+      const lang_clone = lang.slice();
+      const lang_used = lang.filter(i => i["id"]===lang_id)[0];
+      const other_lang = lang.filter(i => i["id"]!==lang_id);
+      $("#dropdownMenuLink > img")[0].src = lang_used["img"];
+      $("#dropdownMenuLink > span")[0].textContent = lang_used["name"];
+      $("#dropdownMenuLink > img")[0].id = lang_used["id"];
+      $(".dropdown-item").each(i => {
+        $(".dropdown-item")[i].getElementsByTagName("img")[0].src = other_lang[i]["img"];
+        $(".dropdown-item")[i].getElementsByTagName("span")[0].textContent = other_lang[i]["name"];
+        $(".dropdown-item")[i].getElementsByTagName("img")[0].id = other_lang[i]["id"];
+      })
+    })
+  })
 });
-
 
 $(window).bind('scroll',function(e){
     parallaxScroll();
@@ -287,4 +414,7 @@ function parallaxScroll(){
     $('#tele').css('bottom',(0-(scrolled*.25))+'px');
     $('#code').css('top',(0-(scrolled*.25))+'px');
     $('#fulltele').css('top',(0-(teleoffset-scrolled)*.25)+'px');
+    if (Number($('#fulltele').css('top').slice(0,-2))>=0) {
+      $('#fulltele').css('top',0)
+    }
 }

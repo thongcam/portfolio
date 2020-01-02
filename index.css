@@ -3,7 +3,7 @@ body {
   border: 0;
   margin: 0;
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-  font-size: 0.9vh;
+  font-size: 9px;
   overflow-x: hidden;
   line-height: 0;
 }
@@ -109,7 +109,8 @@ section {
   height: 40vh;
   width: auto;
   position: relative;
-  bottom: 4vh;
+  bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 #first-subtitle {
@@ -366,7 +367,7 @@ section {
   justify-content: center;
   position: absolute;
   align-self: flex-end;
-  right: 7vw;
+  right: 5vw;
   bottom: 0;
 }
 

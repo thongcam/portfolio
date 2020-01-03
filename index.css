@@ -635,3 +635,7 @@ section {
   color: #4F92E9;
   text-decoration: underline;
 }
+
+#desc-link:hover {
+  cursor: pointer;
+}

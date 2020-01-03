@@ -69,14 +69,14 @@ const content = {
         "vn": "Một game giúp bạn tập tìm notes trên guitar. Bạn phải tìm note phù hợp với miêu tả (ví dụ: Ngăn 8 dây A) và click vào nút tương ứng. Có giới hạn thời gian.",
       },
       "smart-brain": {
-        "en": "Insert an image URL (link) and the website will use the power of Artificial Intelligence to recognize faces in the image.",
+        "en": "Insert an image URL (link) and the website will use the power of Artificial Intelligence to recognize faces in the image. Build upon the <a id='desc-link' href='https://www.clarifai.com/' target='_blank'>Clarifai's API.</a>",
         "es": "",
-        "vn": "Từ một URL (link) hình ảnh bạn chọn, website này sẽ dùng sức mạnh của Trí tuệ Nhân tạo để nhận diện những khuôn mặt trong hình.",
+        "vn": "Từ một URL (link) hình ảnh bạn chọn, website này sẽ dùng sức mạnh của Trí tuệ Nhân tạo để nhận diện những khuôn mặt trong hình. Xây dựng trên <a id='desc-link' href='https://www.clarifai.com/' target='_blank'>Clarifai's API.</a>",
       },
       "star-war-search-engine": {
-        "en": "On this website you can search for Star Wars related stuff such as movies, characters, starships and so on. You can search by name, and narrow down your search using the categories. Built upon the <a id='desc-link'>SWAPI</a> of Paul Hallett.",
+        "en": "On this website you can search for Star Wars related stuff such as movies, characters, starships and so on. You can search by name, and narrow down your search using the categories. Built upon the <a id='desc-link' href='https://swapi.co/' target='_blank'>SWAPI</a> of Paul Hallett.",
         "es": "",
-        "vn": "Trên website này bạn có thể tìm kiếm bất cứ nội dung nào liên quan đến Star Wars, như phim, nhân vật, tàu vũ trụ,... Bạn có thể tìm kiếm bằng tên, và thu hẹp khoảng tìm kiếm bằng các danh mục. Xây dựng trên <a id='desc-link'>SWAPI</a> của Paul Hallett.",
+        "vn": "Trên website này bạn có thể tìm kiếm bất cứ nội dung nào liên quan đến Star Wars, như phim, nhân vật, tàu vũ trụ,... Bạn có thể tìm kiếm bằng tên, và thu hẹp khoảng tìm kiếm bằng các danh mục. Xây dựng trên <a id='desc-link' href='https://swapi.co/' target='_blank'>SWAPI</a> của Paul Hallett.",
       },
       "habit-tracker": {
         "en": "An Excel Workbook turned Habit Tracker App with VBA. You can add the habits you want to track and rate the level of completion of each habit everyday on the scale of 5. You can see how well you are completing your tasks with the interactive graphs at the bottom.",

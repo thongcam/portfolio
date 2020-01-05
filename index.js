@@ -286,11 +286,11 @@ const lang = [
     "name": "English",
     "img": "./img/first/usflag.png"
   },
-  {
-    "id": "es",
-    "name": "Spanish",
-    "img": "./img/first/spain.png"
-  },
+  // {
+  //   "id": "es",
+  //   "name": "Spanish",
+  //   "img": "./img/first/spain.png"
+  // },
   {
     "id": "vn",
     "name": "Vietnamese",

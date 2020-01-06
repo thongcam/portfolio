@@ -256,6 +256,16 @@ const content = {
     "es": "",
     "vn": "Đây là tôi đóng vai Hoàng Tử trong vở kịch 'Cinderella' của nhóm",
   },
+  "#online > div > h5": {
+    "en": "Online Learning",
+    "es": "",
+    "vn": "Học Online",
+  },
+  "#online > div > p": {
+    "en": "I love learning new things online. <a href='https://drive.google.com/file/d/1UIgWHV7qSS8nyVn_Q4H7AkJBa2MPOEdv/view?usp=sharing' target='_blank'>Here are my Udemy certificates.</a>",
+    "es": "",
+    "vn": "Tôi thích tham gia những khóa học online. <a href='https://drive.google.com/file/d/1UIgWHV7qSS8nyVn_Q4H7AkJBa2MPOEdv/view?usp=sharing' target='_blank'>Đây là những chứng chỉ Udemy của tôi.</a>",
+  },
 }
 
 const links =
@@ -308,7 +318,7 @@ const language = (lang) => {
     const elem = content[key];
     if (content.hasOwnProperty(key)) {
       if (key !== "coding-page") {
-        $(key).text(elem[lang]);
+        $(key).html(elem[lang]);
       } else {
         for (var k in elem) {
           if (elem.hasOwnProperty(k)) {

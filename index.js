@@ -186,7 +186,7 @@ const content = {
     "es": "",
     "vn": "Phiên dịch",
   },
-  "#uxvn > div > p": {
+  "#uxvn > div > p > span": {
     "en": "I translated a research paper into Vietnamese for UXVN - an community dedicated to helping Vietnam's User Experience Designers. Translated material will help aspiring UX designers in Vietnam who find it hard to go through English academic material advance their knowledge in the field.",
     "es": "",
     "vn": "Tôi dịch một nghiên cứu sang tiếng Việt cho UXVN - một cộng đồng với mục tiêu giúp đỡ những người thiết kế trải nghiệm người dùng (UX designers) ở Việt Nam. Tài liệu được dịch sẽ giúp UX designers ở Việt Nam gặp khó khăn với những tài liệu học thuật tiếng Anh nâng cao kiến thức trong ngành.",
@@ -201,7 +201,7 @@ const content = {
     "es": "",
     "vn": "Viết bài",
   },
-  "#ted > div > p": {
+  "#ted > div > p > span": {
     "en": "I wrote argumentative essays about various topics in TED presentations, which were posted on my school's TED-Ed Facebook Page to promote the club to other students. They have received more than 50 reactions and prompted many students to join the club and deepen their critical thinking and English skills.",
     "es": "",
     "vn": "Tôi viết những bài luận về nhiều chủ đề trong các bài thuyết trình TED. Những bài luận được đăng trên trang Facebook của CLB TED-ed của trường để quảng bá CLB đến những học sinh khác. Chúng đã nhận được hơn 50 lượt phản ứng và đưa nhiều học sinh tham gia CLB để nâng cao khả năng lập luận và tiếng Anh.",
@@ -216,7 +216,7 @@ const content = {
     "es": "",
     "vn": "Tiếng Tây Ban Nha",
   },
-  "#esp > div > p": {
+  "#esp > div > p > span": {
     "en": "I have studied Spanish for 2 years. Outside language center, I learn through music, YouTube videos, and news articles. I have written several short stories to memorise the vocabulary and grammar I have learnt.",
     "es": "",
     "vn": "Tôi đã học tiếng Tây Ban Nha 2 năm. Bên ngoài trung tâm ngôn ngữ, tôi còn học qua âm nhạc, video YouTube, và những bài báo. Tôi đã viết vài truyện ngắn để ghi nhớ những từ vựng và ngữ pháp tôi đã học.",

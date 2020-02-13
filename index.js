@@ -312,6 +312,8 @@ const vh = $("#first-page").offsetHeight;
 
 var currentLang = 'en';
 
+
+
 const language = (lang) => {
   currentLang = lang;
   for (var key in content) {
